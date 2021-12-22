@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+    prediction:
+        image: ml_inference_team_20 #image name
+        build: ./prediction 
+        ports:
+        - 5000:5000 #map port
+        volumes:
+        - ./prediction:/app #map working directory
