@@ -1,3 +1,9 @@
+This project implements a simple image inference serving system that handles HTTP requests to query the model and return the classification results. The backend server is a Flask application which uses a pre-trained Densenet-121 model from
+PyTorch to perform image classification. The server is hosted in a Docker container using a
+Python 3.7 image and a basic client program written in Python provides the ability to query the
+system using an HTTP POST request that sends the image file to the server. The server
+responds with the inferred class ID and class name for the specified image.
+
 ## Setup
 
 To run this repository, follow the following steps:
